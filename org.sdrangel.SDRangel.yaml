@@ -392,8 +392,12 @@ modules:
       - -DRX_SAMPLE_24BIT=ON
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.6.1.tar.gz
-        sha256: cf2a90b08246b62841f3385688fb291ecdd3339a8d029ae391c5290ccfada4e7
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.6.2.tar.gz
+        sha256: 4a54d308dadb95b7f23cc0ccbb166210a5649489d2e700356d72447f5caeaef1
+        x-checker-data:
+          type: anitya
+          project-id: 14479
+          url-template: https://github.com/f4exb/sdrangel/archive/refs/tags/v$version.tar.gz
       - type: shell
         commands:
           - sed -e 's|/usr/|/app/|g' -i cmake/Modules/FindSerialDV.cmake
