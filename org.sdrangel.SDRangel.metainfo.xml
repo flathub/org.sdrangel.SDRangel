@@ -11,7 +11,7 @@
       TX/RX from multiple SDRs simultaneously, do noise figure measurement, satellite and star tracking, rotator control, 2D and 3D mapping and much more.
     </p>
     <p>
-      It has Native support for Airspy, Airspy HF, Airspy Discovery, FUNcube, HackRF, KiwiSDR, LimeSDR, LimeSDR Mini, LimeRFE, Perseus, PlutoSDR,
+      It has native support for Airspy, Airspy HF, Airspy Discovery, FUNcube, HackRF, KiwiSDR, LimeSDR, LimeSDR Mini, LimeRFE, Perseus, PlutoSDR,
       RTL-SDR, USRP B210, XTRX, and more devices via Soapy and audio interfaces.
     </p>
     <p>
