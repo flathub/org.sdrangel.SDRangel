@@ -402,6 +402,8 @@ modules:
         commands:
           - sed -e 's|/usr/|/app/|g' -i cmake/Modules/FindSerialDV.cmake
           - sed -e 's|/usr/|/app/|g' -i cmake/Modules/FindLibDAB.cmake
+          - sed -e 's|/usr/|/app/|g' -i cmake/Modules/FindSgp4.cmake
+          - sed -e 's|/usr/|/app/|g' -i cmake/Modules/FindAptDec.cmake
       - type: file
         path: org.sdrangel.SDRangel.metainfo.xml
     post-install:
