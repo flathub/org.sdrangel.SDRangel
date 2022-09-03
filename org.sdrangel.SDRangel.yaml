@@ -3,7 +3,7 @@ runtime: org.kde.Platform
 runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
-base-version: '5.15-21.08'
+base-version: 5.15-21.08
 command: sdrangel
 rename-desktop-file: sdrangel.desktop
 rename-icon: sdrangel_icon
@@ -392,8 +392,8 @@ modules:
       - -DRX_SAMPLE_24BIT=ON
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.6.2.tar.gz
-        sha256: 4a54d308dadb95b7f23cc0ccbb166210a5649489d2e700356d72447f5caeaef1
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.6.3.tar.gz
+        sha256: 7a2e5f6a1009c0c649d181095fc76b546140d9bc73d64ddb8b481735a33759bb
         x-checker-data:
           type: anitya
           project-id: 14479

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
   <id>org.sdrangel.SDRangel</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -33,9 +33,10 @@
     <binary>sdrangel</binary>
   </provides>
   <releases>
+    <release version="7.6.3" date="2022-09-01"/>
     <release version="7.6.2" date="2022-08-14"/>
     <release version="7.6.1" date="2022-08-03"/>
     <release version="7.6.0" date="2022-07-20"/>
   </releases>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
 </component>
