@@ -235,7 +235,7 @@ modules:
       - type: git
         url: https://github.com/srcejon/aptdec.git
         branch: libaptdec
-        commit: 7d695a3eddf9ec79bdc304a55206231d613f3917
+        commit: 3e8297a912f89a3c42af0845b83a209a6cd13c55
 
   - name: airspy
     buildsystem: cmake-ninja
