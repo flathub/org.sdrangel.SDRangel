@@ -17,6 +17,14 @@ finish-args:
   - --filesystem=xdg-documents
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
+  - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
+add-extensions:
+  org.freedesktop.Platform.ffmpeg-full:
+    directory: lib/ffmpeg
+    add-ld-path: .
+    version: '22.08'
+    autodownload: true
+    autodelete: false
 
 modules:
   - shared-modules/linux-audio/fftw3f.json
