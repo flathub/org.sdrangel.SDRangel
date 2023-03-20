@@ -394,14 +394,16 @@ modules:
 
   - name: sdrangel
     buildsystem: cmake-ninja
+    build-options:
+      cxxflags: -fpermissive
     config-opts:
       - -Wno-dev
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DRX_SAMPLE_24BIT=ON
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.10.0.tar.gz
-        sha256: 42e38ea31fcbf83895a2cf4578edb21872b43cfba0faf3a1dbbb3ad570a5cecf
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.11.0.tar.gz
+        sha256: a30f47914529e520de6381d019749587f25d970b4c3dd252d63a1fe3733f560f
         x-checker-data:
           type: anitya
           project-id: 14479
