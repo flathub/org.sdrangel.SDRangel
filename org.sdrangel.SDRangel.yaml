@@ -402,8 +402,8 @@ modules:
       - -DRX_SAMPLE_24BIT=ON
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.13.0.tar.gz
-        sha256: f084ae744e1d6d83f90a81e515c3febb19550680214066a4fae87ff01edc9e9e
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.14.1.tar.gz
+        sha256: 5c3ab1c850f2de4e4b4ce910ddecda1f5dd597bd0115fddf93779e3a02b5d243
         x-checker-data:
           type: anitya
           project-id: 14479
