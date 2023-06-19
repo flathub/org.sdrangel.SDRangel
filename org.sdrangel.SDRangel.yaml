@@ -245,6 +245,12 @@ modules:
         branch: libaptdec
         commit: 3e8297a912f89a3c42af0845b83a209a6cd13c55
 
+  - name: hamlib
+    sources:
+      - type: archive
+        url: https://github.com/Hamlib/Hamlib/releases/download/4.5.5/hamlib-4.5.5.tar.gz
+        sha256: 601c89f32ed225e9527ade3d64d0d05d23202c05ae21ffa77e59d70ee4597fcd
+
   - name: airspy
     buildsystem: cmake-ninja
     config-opts:
@@ -402,8 +408,8 @@ modules:
       - -DRX_SAMPLE_24BIT=ON
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.14.2.tar.gz
-        sha256: 1ab0decdeec20fd2965c45bb5beff8a4e24239e9324fc637dd92e24682391539
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.15.0.tar.gz
+        sha256: 2f37057149c196b815cf464f1744092424be8bdd6e77dfe59403f92b928f747f
         x-checker-data:
           type: anitya
           project-id: 14479
