@@ -35,8 +35,8 @@ modules:
       - --without-python
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/libxml2/2.9/libxml2-2.9.14.tar.xz
-        sha256: 60d74a257d1ccec0475e749cba2f21559e48139efba6ff28224357c7c798dfee
+        url: https://download.gnome.org/sources/libxml2/2.10/libxml2-2.10.4.tar.xz
+        sha256: ed0c91c5845008f1936739e4eee2035531c1c94742c6541f44ee66d885948d45
 
   - name: boost
     buildsystem: simple
@@ -295,8 +295,8 @@ modules:
       - -DHAVE_DNS_SD=OFF
     sources:
       - type: archive
-        url: https://github.com/analogdevicesinc/libiio/archive/refs/tags/v0.25.tar.gz
-        sha256: 21972599a3c143ab1f98002ad2b3f28f4aff927fde5f677478311cd4e517730c
+        url: https://github.com/analogdevicesinc/libiio/archive/refs/tags/v0.24.tar.gz
+        sha256: a2b5d848531ea64fd9f95327dfd5a588bd227d9577281ec375e822702c6a52d5
 
   - name: hackrf
     buildsystem: cmake-ninja
