@@ -149,9 +149,9 @@ modules:
     config-opts:
       - -Wno-dev
     sources:
-      - type: archive
-        url: https://github.com/f4exb/cm256cc/archive/refs/tags/v1.1.0.tar.gz
-        sha256: 5e6643b7fe7f2dcebf5f602451a77d82959732dbe83bda5029958f9cda6ddac8
+      - type: git
+        url: https://github.com/f4exb/cm256cc.git
+        commit: 6f4a51802f5f302577d6d270a9fc0cb7a1ee28ef
 
   - name: mbelib
     buildsystem: cmake-ninja
