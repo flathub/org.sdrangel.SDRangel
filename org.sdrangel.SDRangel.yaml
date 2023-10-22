@@ -224,6 +224,11 @@ modules:
 
   - name: libsigmf
     buildsystem: cmake-ninja
+    build-options:
+      cflags: -Wno-error
+      cflags-override: true
+      cxxflags: -Wno-error
+      cxxflags-override: true
     config-opts:
       - -Wno-dev
     sources:
