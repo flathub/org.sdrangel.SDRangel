@@ -323,6 +323,8 @@ modules:
       - type: archive
         url: https://github.com/myriadrf/LimeSuite/archive/refs/tags/v22.09.0.tar.gz
         sha256: 521e45298e1ffd0fd65006598e1edf37bd92a13667afaab262582fc681f1cf16
+      - type: patch
+        path: limesdr-fix-gcc-13-build.patch
 
   - name: perseus
     buildsystem: cmake-ninja
