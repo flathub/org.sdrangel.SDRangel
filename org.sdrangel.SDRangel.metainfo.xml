@@ -33,7 +33,7 @@
     <binary>sdrangel</binary>
   </provides>
   <releases>
-    <release version="7.17.2" date="2023-12-08"/>
+    <release version="7.17.2" date="2023-12-04"/>
     <release version="7.17.1" date="2023-11-29"/>
     <release version="7.17.0" date="2023-10-29"/>
     <release version="7.16.0" date="2023-09-21"/>
