@@ -284,8 +284,8 @@ modules:
       - -DDETACH_KERNEL_DRIVER=ON
     sources:
       - type: git
-        url: https://github.com/librtlsdr/librtlsdr.git
-        commit: fe225869acbe558fb014d858fb1bdd4dce96eab0
+        url: https://github.com/steve-m/librtlsdr.git
+        commit: af338867964136ce8dd670a6c8ac340cb3e36fd8
 
   - name: plutosdr
     buildsystem: cmake-ninja
