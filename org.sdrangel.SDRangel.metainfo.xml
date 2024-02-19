@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   <name>SDRangel</name>
+  <developer_name>Edouard Griffiths</developer_name>
   <summary>TX &amp; RX Software Defined Radio</summary>
   <description>
     <p>
@@ -17,7 +18,7 @@
     <p>
       Please note that the SDRangel Flatpak requires udev rules for most SDR devices to be installed on the system to work properly.
       You will have to either install the tools for your SDR via regular package manager or manually download the udev rules from
-      https://github.com/flathub/org.sdrangel.SDRangel/tree/master/udev-rules and copy them into system /etc/udev/rules.d/
+      github.com/flathub/org.sdrangel.SDRangel/tree/master/udev-rules and copy them into system /etc/udev/rules.d/
       before using SDRangel.
     </p>
   </description>
@@ -33,6 +34,7 @@
     <binary>sdrangel</binary>
   </provides>
   <releases>
+    <release version="7.18.0" date="2024-02-18"/>
     <release version="7.17.3" date="2023-12-31"/>
     <release version="7.17.2" date="2023-12-04"/>
     <release version="7.17.1" date="2023-11-29"/>
@@ -65,4 +67,5 @@
     <release version="7.6.0" date="2022-07-20"/>
   </releases>
   <content_rating type="oars-1.1"/>
+  <launchable type="desktop-id">org.sdrangel.SDRangel.desktop</launchable>
 </component>
