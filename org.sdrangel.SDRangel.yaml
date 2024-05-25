@@ -252,6 +252,13 @@ modules:
         # branch: libaptdec
         commit: 3e8297a912f89a3c42af0845b83a209a6cd13c55
 
+  - name: ggmorse
+    buildsystem: cmake-ninja
+    sources:
+      - type: git
+        url: https://github.com/f4exb/ggmorse.git
+        commit: 75c335f343aa15514c6437c5c19c7ea54ea3ce7e
+
   - name: hamlib
     sources:
       - type: archive
@@ -417,8 +424,8 @@ modules:
       - -DRX_SAMPLE_24BIT=ON
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.20.1.tar.gz
-        sha256: 6fed98b3bf947542b58c43e57202c606f18bf531a447cd51a117a0e20ead8050
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.21.1.tar.gz
+        sha256: 5e874ae871f1449a7c570f2114655317e55a4ce4bf50b71ae2b176d1a3535101
         x-checker-data:
           type: anitya
           project-id: 14479
