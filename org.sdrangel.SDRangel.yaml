@@ -460,8 +460,8 @@ modules:
       - -DENABLE_QT6=ON
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.22.5.tar.gz
-        sha256: aa32041750de98059af3303e43bf84d2ce0c1d1af24014d94ec7fb308bae4f11
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.22.6.tar.gz
+        sha256: 0d8a7d5e7ff4c5cdde038383395f052ac28fa97016c7de5530a2f1590509f5f6
         x-checker-data:
           type: anitya
           project-id: 14479
