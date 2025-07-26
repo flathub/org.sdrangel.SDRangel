@@ -24,7 +24,7 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://dashboard.snapcraft.io/site_media/appmedia/2024/03/SDRangelSID-1711125217.png</image>
+      <image type="source">https://raw.githubusercontent.com/flathub/org.sdrangel.SDRangel/refs/heads/master/screenshot.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://www.sdrangel.org</url>
