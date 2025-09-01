@@ -12,14 +12,14 @@
       TX/RX from multiple SDRs simultaneously, do noise figure measurement, satellite and star tracking, rotator control, 2D and 3D mapping and much more.
     </p>
     <p>
-      It has native support for Airspy, Airspy HF, Airspy Discovery, FUNcube, HackRF, KiwiSDR, LimeSDR, LimeSDR Mini, LimeRFE, Perseus, PlutoSDR,
-      RTL-SDR, USRP B210, XTRX, and more devices via Soapy and audio interfaces.
+      It has native support for Airspy, Airspy HF, Airspy Discovery, FUNcube, HackRF, KiwiSDR, LimeSDR, LimeSDR Mini, LimeRFE, Perseus, PlutoSDR, RTL-SDR,
+      USRP B210, XTRX, and more devices via Soapy and audio interfaces.
     </p>
     <p>
-      Please note that the SDRangel Flatpak requires udev rules for most SDR devices to be installed on the system. Some of these should already
-      be part of your distribution, but if your SDR device does not work, you will have to either install the tools for your SDR via regular
-      package manager or manually download the udev rules from github.com/flathub/org.sdrangel.SDRangel/tree/master/udev-rules and copy them
-      into /etc/udev/rules.d/ followed by system reboot before using SDRangel.
+      Please note that the SDRangel Flatpak requires udev rules for most SDR devices to be installed. Some of these should already be part of your system,
+      but if your SDR device does not work, you will have to either install the tools for your SDR via regular package manager or manually download
+      the udev rules from github.com/flathub/org.sdrangel.SDRangel/tree/master/udev-rules and copy them into /etc/udev/rules.d/ followed by
+      system reboot before using SDRangel.
     </p>
   </description>
   <screenshots>
