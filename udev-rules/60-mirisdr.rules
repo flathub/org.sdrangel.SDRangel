@@ -16,13 +16,13 @@
 #
 
 # Mirics MSi2500 default (e.g. VTX3D card)
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1df7", ATTRS{idProduct}=="2500", MODE:="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1df7", ATTRS{idProduct}=="2500", MODE:="0666", ENV{ID_SOFTWARE_RADIO}="1"
 
 # IO-DATA GV-TV100 stick
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="04bb", ATTRS{idProduct}=="0537", MODE:="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="04bb", ATTRS{idProduct}=="0537", MODE:="0666", ENV{ID_SOFTWARE_RADIO}="1"
 
 # SDRplay RSP1A
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1df7", ATTRS{idProduct}=="3000", MODE:="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1df7", ATTRS{idProduct}=="3000", MODE:="0666", ENV{ID_SOFTWARE_RADIO}="1"
 
 # SDRplay RSP2
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="1df7", ATTRS{idProduct}=="3010", MODE:="0666"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="1df7", ATTRS{idProduct}=="3010", MODE:="0666", ENV{ID_SOFTWARE_RADIO}="1"
