@@ -164,7 +164,7 @@ modules:
         url: https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
         sha256: 57be87c22d9b49c112b6d24bc67d42508660e6b718b3db89c44e47e289137082
       - type: patch
-        path: ffmpeg-fix-assembling.patch
+        path: patches/ffmpeg-fix-assembling.patch
 
   - name: libaio
     no-autogen: true
@@ -366,7 +366,7 @@ modules:
         url: https://github.com/myriadrf/LimeSuite/archive/refs/tags/v22.09.0.tar.gz
         sha256: 521e45298e1ffd0fd65006598e1edf37bd92a13667afaab262582fc681f1cf16
       - type: patch
-        path: limesdr-fix-gcc-13-build.patch
+        path: patches/limesdr-fix-gcc-13-build.patch
 
   - name: perseus
     buildsystem: cmake-ninja
@@ -400,9 +400,9 @@ modules:
         url: https://github.com/EttusResearch/uhd/archive/refs/tags/v4.5.0.0.tar.gz
         sha256: ca8217b1f0591fb99432a94f225e74fb4d0fe541d496ec1386221b6438d4875d
       - type: patch
-        path: uhd-disable-ascii-art-dft.patch
-      - type: patch
-        path: uhd-disable-latency-utils.patch
+        paths:
+          - patches/uhd-disable-ascii-art-dft.patch
+          - patches/uhd-disable-latency-utils.patch
 
   - name: libmirisdr
     buildsystem: cmake-ninja
