@@ -1,9 +1,9 @@
 app-id: org.sdrangel.SDRangel
 runtime: org.kde.Platform
-runtime-version: '6.8'
+runtime-version: '6.9'
 sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
-base-version: '6.8'
+base-version: '6.9'
 command: sdrangel
 rename-desktop-file: sdrangel.desktop
 rename-icon: sdrangel_icon
