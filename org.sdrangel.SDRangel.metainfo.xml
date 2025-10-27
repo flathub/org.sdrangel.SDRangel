@@ -15,11 +15,6 @@
       It has native support for Airspy, Airspy HF, Airspy Discovery, FUNcube, HackRF, KiwiSDR, LimeSDR, LimeSDR Mini, LimeRFE, Perseus, PlutoSDR, RTL-SDR,
       USRP B210, XTRX, and more devices via Soapy and audio interfaces.
     </p>
-    <p>
-      Please note that the SDRangel Flatpak requires udev rules for most SDR devices to be installed. Many of these should already be part of your system,
-      but if your SDR device does not work, you will have to install the tools for your SDR via regular package manager followed by system reboot before
-      using SDRangel.
-    </p>
   </description>
   <screenshots>
     <screenshot type="default">
