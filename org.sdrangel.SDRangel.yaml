@@ -476,10 +476,10 @@ modules:
       - type: archive
         url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.22.8.tar.gz
         sha256: 3a3114a4dc26a880c4469a997c135c3a1efaae0f4af44f76002d98eabfc178be
-        #x-checker-data:
-        #  type: anitya
-        #  project-id: 14479
-        #  url-template: https://github.com/f4exb/sdrangel/archive/refs/tags/v$version.tar.gz
+        x-checker-data:
+          type: anitya
+          project-id: 14479
+          url-template: https://github.com/f4exb/sdrangel/archive/refs/tags/v$version.tar.gz
       - type: shell
         commands:
           - sed -e 's|/usr/|/app/|g' -i cmake/Modules/FindSerialDV.cmake
