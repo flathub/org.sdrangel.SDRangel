@@ -1,5 +1,5 @@
 diff --git a/cmake/cpack/org.sdrangel.SDRangel.metainfo.xml b/cmake/cpack/org.sdrangel.SDRangel.metainfo.xml
-index 4d9644838..98eefd049 100644
+index 4d9644838..da6e09e67 100644
 --- a/cmake/cpack/org.sdrangel.SDRangel.metainfo.xml
 +++ b/cmake/cpack/org.sdrangel.SDRangel.metainfo.xml
 @@ -16,7 +16,7 @@
@@ -7,7 +7,7 @@ index 4d9644838..98eefd049 100644
      <p>
        It has native support for Airspy, Airspy HF, Airspy Discovery, bladeRF, FUNcube, HackRF, KiwiSDR, LimeSDR, LimeSDR Mini, LimeRFE, Perseus, PlutoSDR,
 -      RTL-SDR, SDRplay RSP1, RSP2, RSPduo, RSPdx, USRP B210, XTRX, and more devices via Soapy and audio interfaces.
-+      RTL-SDR, USRP B210, XTRX, and more devices via Soapy and audio interfaces.
++      RTL-SDR, USRP B210, and more devices via Soapy and audio interfaces.
      </p>
    </description>
    <screenshots>

@@ -414,17 +414,16 @@ modules:
       - type: patch
         path: patches/perseus-newer-cmake-fix.patch
 
-  - name: xtrx
-    buildsystem: cmake-ninja
-    subdir: sources
-    config-opts:
-      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
-      - -DENABLE_SOAPY=NO
-      - -Wno-dev
-    sources:
-      - type: git
-        url: https://github.com/xtrx-sdr/images.git
-        commit: e7c68fa621004ee0d6a65171c786fd9d5a1f2ce6
+#  - name: xtrx
+#    buildsystem: cmake-ninja
+#    subdir: sources
+#    config-opts:
+#      - -DENABLE_SOAPY=NO
+#      - -Wno-dev
+#    sources:
+#      - type: git
+#        url: https://github.com/xtrx-sdr/images.git
+#        commit: e7c68fa621004ee0d6a65171c786fd9d5a1f2ce6
 
   - name: uhd
     buildsystem: cmake-ninja
