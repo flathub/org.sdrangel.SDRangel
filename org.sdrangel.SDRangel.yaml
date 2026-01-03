@@ -42,8 +42,9 @@ modules:
     buildsystem: simple
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/boost/files/boost/1.83.0/boost_1_83_0.tar.bz2
-        sha256: 6478edfe2f3305127cffe8caf73ea0176c53769f4bf1585be237eb30798c3b8e
+        # 1.88.0 brings breaking changes for uhd
+        url: https://sourceforge.net/projects/boost/files/boost/1.87.0/boost_1_87_0.tar.bz2
+        sha256: af57be25cb4c4f4b413ed692fe378affb4352ea50fbe294a11ef548f4d527d89
     build-commands:
       - ./bootstrap.sh --prefix=/app
       - ./b2 -j $FLATPAK_BUILDER_N_JOBS
