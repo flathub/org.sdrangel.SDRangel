@@ -326,8 +326,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Nuand/bladeRF.git
-        tag: '2023.02'
-        commit: 41ef63460956e833c9b321252245257ab3946055
+        tag: '2025.10'
+        commit: fcf9423325ae49f5fdd2e5b52ab68bfc2576ad47
 
   - name: rtlsdr
     buildsystem: cmake-ninja
@@ -347,8 +347,8 @@ modules:
       - -DHAVE_DNS_SD=OFF
     sources:
       - type: archive
-        url: https://github.com/analogdevicesinc/libiio/archive/refs/tags/v0.24.tar.gz
-        sha256: a2b5d848531ea64fd9f95327dfd5a588bd227d9577281ec375e822702c6a52d5
+        url: https://github.com/analogdevicesinc/libiio/archive/refs/tags/v0.26.tar.gz
+        sha256: fb445fb860ef1248759f45d4273a4eff360534480ec87af64c6b8db3b99be7e5
 
   - name: hackrf
     buildsystem: cmake-ninja
@@ -358,8 +358,8 @@ modules:
       - -DINSTALL_UDEV_RULE=OFF
     sources:
       - type: archive
-        url: https://github.com/greatscottgadgets/hackrf/archive/refs/tags/v2023.01.1.tar.gz
-        sha256: fd10cd3650900aef7546e7a40a2d475db9dd1eab86b5d6f0c1188c91bedadd31
+        url: https://github.com/greatscottgadgets/hackrf/archive/refs/tags/v2024.02.1.tar.gz
+        sha256: 16e4707b80d0d16db3a9e2149745d7a1bc253dea88c9c542d3ae062df5cbd9e3
 
   - name: limesdr
     buildsystem: cmake-ninja
@@ -373,10 +373,8 @@ modules:
       - -DENABLE_HEADERS=ON
     sources:
       - type: archive
-        url: https://github.com/myriadrf/LimeSuite/archive/refs/tags/v22.09.0.tar.gz
-        sha256: 521e45298e1ffd0fd65006598e1edf37bd92a13667afaab262582fc681f1cf16
-      - type: patch
-        path: patches/limesdr-fix-gcc-13-build.patch
+        url: https://github.com/myriadrf/LimeSuite/archive/refs/tags/v23.11.0.tar.gz
+        sha256: fd8a448b92bc5ee4012f0ba58785f3c7e0a4d342b24e26275318802dfe00eb33
 
   - name: perseus
     buildsystem: cmake-ninja
@@ -407,8 +405,9 @@ modules:
       - -DINSTALL_UDEV_RULES=OFF
     sources:
       - type: archive
-        url: https://github.com/EttusResearch/uhd/archive/refs/tags/v4.5.0.0.tar.gz
-        sha256: ca8217b1f0591fb99432a94f225e74fb4d0fe541d496ec1386221b6438d4875d
+        # 4.9.0.0 has possible breaking API changes
+        url: https://github.com/EttusResearch/uhd/archive/refs/tags/v4.8.0.0.tar.gz
+        sha256: a2159491949477dca67f5a9b05f5a80d8c2b32e91b95dd7fac8ddd3893e36d09
       - type: patch
         paths:
           - patches/uhd-disable-ascii-art-dft.patch
@@ -446,9 +445,10 @@ modules:
     config-opts:
       - -Wno-dev
     sources:
-      - type: archive
-        url: https://github.com/pothosware/SoapyUHD/archive/refs/tags/soapy-uhd-0.4.1.tar.gz
-        sha256: 9779cce2e732cd41905b6cf8ea85edbbf51b1ac918e6180bd4891eebb4c8d085
+      - type: git
+        url: https://github.com/pothosware/SoapyUHD.git
+        # latest master for multiple fixes
+        commit: 6b521393cc45c66770f3d4bc69eac7dda982174c
 
   - name: soapy_redpitaya
     buildsystem: cmake-ninja
