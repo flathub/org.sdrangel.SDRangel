@@ -437,9 +437,10 @@ modules:
     config-opts:
       - -Wno-dev
     sources:
-      - type: archive
-        url: https://github.com/pothosware/SoapyRemote/archive/refs/tags/soapy-remote-0.5.2.tar.gz
-        sha256: 66a372d85c984e7279b4fdc0a7f5b0d7ba340e390bc4b8bd626a6523cd3c3c76
+      - type: git
+        url: https://github.com/pothosware/SoapyRemote.git
+        # latest master for multiple fixes
+        commit: 40c3ef9053b63885b7444ce7e9ef00d2c7964c9d
 
   - name: soapy_uhd
     buildsystem: cmake-ninja
@@ -449,16 +450,17 @@ modules:
       - type: git
         url: https://github.com/pothosware/SoapyUHD.git
         # latest master for multiple fixes
-        commit: 6b521393cc45c66770f3d4bc69eac7dda982174c
+        commit: 2a5d381f68fd05d5b3c0e7db56c36892ea99b4ae
 
   - name: soapy_redpitaya
     buildsystem: cmake-ninja
     config-opts:
       - -Wno-dev
     sources:
-      - type: archive
-        url: https://github.com/pothosware/SoapyRedPitaya/archive/refs/tags/soapy-redpitaya-0.1.1.tar.gz
-        sha256: 71306b1bdc4bd53b059e374797e4ad86672221d5f8534bda60f2dc726005be50
+      - type: git
+        url: https://github.com/pothosware/SoapyRedPitaya.git
+        # latest master for multiple fixes
+        commit: 0702140487231658d200d488dfde7db3e41a5538
 
   - name: sdrangel
     buildsystem: cmake-ninja
