@@ -1,4 +1,4 @@
-app-id: org.sdrangel.SDRangel
+id: org.sdrangel.SDRangel
 runtime: org.kde.Platform
 runtime-version: '6.9'
 sdk: org.kde.Sdk
