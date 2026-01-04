@@ -492,10 +492,6 @@ modules:
     buildsystem: cmake-ninja
     build-options:
       cxxflags: -fpermissive
-      arch:
-        x86_64:
-          config-opts:
-            - -DARCH_OPT=nehalem
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DENABLE_QT6=ON
