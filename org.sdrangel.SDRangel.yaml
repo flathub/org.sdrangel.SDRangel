@@ -379,6 +379,10 @@ modules:
   - name: limesdr
     buildsystem: cmake-ninja
     build-options:
+      arch:
+        x86_64:
+          config-opts:
+            - -DARCH_OPT=nehalem
       cflags: -std=gnu17
     config-opts:
       - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
