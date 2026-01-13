@@ -237,7 +237,7 @@ modules:
       - type: git
         url: https://github.com/srcejon/dab-cmdline.git
         # branch: msvc
-        commit: c3b57ef53a7c61dd99cdc7161f0fc10282fe63d9
+        commit: 4c7ab58857a1de71f585728ffcbc4916db9b56c7
 
   - name: hidapi
     buildsystem: cmake-ninja
