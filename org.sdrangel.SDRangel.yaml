@@ -237,7 +237,7 @@ modules:
       - type: git
         url: https://github.com/srcejon/dab-cmdline.git
         # branch: msvc
-        commit: c3b57ef53a7c61dd99cdc7161f0fc10282fe63d9
+        commit: 4c7ab58857a1de71f585728ffcbc4916db9b56c7
 
   - name: hidapi
     buildsystem: cmake-ninja
@@ -462,6 +462,23 @@ modules:
         # latest master for multiple fixes
         commit: 0702140487231658d200d488dfde7db3e41a5538
 
+  - name: inmarsatc
+    buildsystem: cmake-ninja
+    sources:
+      - type: git
+        url: https://github.com/cropinghigh/inmarsatc.git
+        commit: cda1242e79981d71cd8608e971c8dbc691942b10
+
+  - name: rnnoise
+    sources:
+      - type: git
+        url: https://github.com/xiph/rnnoise.git
+        # latest main for multiple fixes
+        commit: 70f1d256acd4b34a572f999a05c87bf00b67730d
+      - type: file
+        url: https://media.xiph.org/rnnoise/models/rnnoise_data-0a8755f8e2d834eff6a54714ecc7d75f9932e845df35f8b59bc52a7cfe6e8b37.tar.gz
+        sha256: 0a8755f8e2d834eff6a54714ecc7d75f9932e845df35f8b59bc52a7cfe6e8b37
+
   - name: sdrangel
     buildsystem: cmake-ninja
     build-options:
@@ -477,8 +494,8 @@ modules:
       - -Wno-dev
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.22.10.tar.gz
-        sha256: b3d8f8a61331288efcf7d261da95ebf1c3543121236ca949023b7a52f4a53598
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.23.0.tar.gz
+        sha256: 39fcf93c52a9e1cf8b313302ef0531ebdb0ccab2e029e3559ca9632e1aa68d25
         x-checker-data:
           type: anitya
           project-id: 14479

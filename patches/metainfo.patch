@@ -1,5 +1,5 @@
 diff --git a/cmake/cpack/org.sdrangel.SDRangel.metainfo.xml b/cmake/cpack/org.sdrangel.SDRangel.metainfo.xml
-index 4d9644838..98eefd049 100644
+index 4d9644838..d305f382b 100644
 --- a/cmake/cpack/org.sdrangel.SDRangel.metainfo.xml
 +++ b/cmake/cpack/org.sdrangel.SDRangel.metainfo.xml
 @@ -16,7 +16,7 @@
@@ -11,26 +11,17 @@ index 4d9644838..98eefd049 100644
      </p>
    </description>
    <screenshots>
-@@ -29,5 +29,68 @@
+@@ -29,5 +29,59 @@
    <provides>
      <binary>sdrangel</binary>
    </provides>
 +  <releases>
-+    <release version="7.22.10" date="2025-12-22">
-+      <description></description>
-+    </release>
-+    <release version="7.22.9" date="2025-09-28">
-+      <description></description>
-+    </release>
-+    <release version="7.22.8" date="2025-07-02">
-+      <description/>
-+    </release>
-+    <release version="7.22.7" date="2025-05-04">
-+      <description/>
-+    </release>
-+    <release version="7.22.6" date="2025-02-02">
-+      <description/>
-+    </release>
++    <release version="7.23.0" date="2026-01-13"/>
++    <release version="7.22.10" date="2025-12-22"/>
++    <release version="7.22.9" date="2025-09-28"/>
++    <release version="7.22.8" date="2025-07-02"/>
++    <release version="7.22.7" date="2025-05-04"/>
++    <release version="7.22.6" date="2025-02-02"/>
 +    <release version="7.22.5" date="2024-12-05"/>
 +    <release version="7.22.4" date="2024-11-11"/>
 +    <release version="7.22.3" date="2024-11-09"/>
