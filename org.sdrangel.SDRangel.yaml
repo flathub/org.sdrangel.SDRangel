@@ -183,14 +183,14 @@ modules:
         url: https://github.com/f4exb/cm256cc.git
         commit: da87adbe3e583877870cb159d37e0456549b2c29
 
-  - name: mbelib
+  - name: mbelib-neo
     buildsystem: cmake-ninja
     config-opts:
       - -Wno-dev
     sources:
-      - type: archive
-        url: https://github.com/szechyjs/mbelib/archive/refs/tags/v1.3.0.tar.gz
-        sha256: 5a2d5ca37cef3b6deddd5ce8c73918f27936c50eb0e63b27e4b4fc493310518d
+      - type: git
+        url: https://github.com/arancormonk/mbelib-neo.git
+        commit: f7b04d6fde7e17ab5029c65bc94a0804f005ac24
 
   - name: serialdv
     buildsystem: cmake-ninja
