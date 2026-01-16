@@ -15,6 +15,7 @@ finish-args:
   - --socket=pulseaudio
   - --socket=x11
   - --filesystem=xdg-documents
+  - --system-talk-name=org.freedesktop.GeoClue2
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
   - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
