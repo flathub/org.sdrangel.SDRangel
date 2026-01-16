@@ -477,6 +477,9 @@ modules:
         x86_64:
           config-opts:
             - -DARCH_OPT=nehalem
+        aarch64:
+          config-opts:
+            - -DARCH_OPT=armv8-a
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DENABLE_QT6=ON
