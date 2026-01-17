@@ -29,7 +29,6 @@ add-extensions:
 
 modules:
   - shared-modules/linux-audio/fftw3f.json
-  - shared-modules/libusb/libusb.json
 
   - name: libxml2
     config-opts:
