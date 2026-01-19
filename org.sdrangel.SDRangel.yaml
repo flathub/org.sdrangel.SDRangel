@@ -350,8 +350,8 @@ modules:
       - -Wno-dev
     sources:
       - type: archive
-        url: https://github.com/greatscottgadgets/hackrf/archive/refs/tags/v2026.01.1.tar.gz
-        sha256: 27191147185fc3dd3ca842f6cdb3d57097a4d0398f33db5c15a5fa48aa64ba8f
+        url: https://github.com/greatscottgadgets/hackrf/archive/refs/tags/v2026.01.2.tar.gz
+        sha256: 02dd2b914e03e6e8fa8a1b1a6e9642866118c4c9bed7be79daaf0a7348183543
 
   - name: limesdr
     buildsystem: cmake-ninja
