@@ -405,6 +405,18 @@ modules:
           - patches/uhd-disable-ascii-art-dft.patch
           - patches/uhd-disable-latency-utils.patch
 
+  - name: uhd_images
+    buildsystem: simple
+    sources:
+      - type: archive
+        url: https://github.com/EttusResearch/uhd/releases/download/v4.8.0.0/uhd-images_4.8.0.0.tar.xz
+        sha256: 602ee2b9806d5d9ae40a9b068e55ba084e6becea51fdbd956d1f0229d553bf44
+    build-commands:
+      - install -Dm644 LICENSE -t ${FLATPAK_DEST}/share/uhd/images
+      - for f in usrp_b2*; do
+          install -m644 $f -t ${FLATPAK_DEST}/share/uhd/images;
+        done
+
   - name: libmirisdr
     buildsystem: cmake-ninja
     config-opts:
