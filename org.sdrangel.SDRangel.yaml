@@ -413,9 +413,7 @@ modules:
         sha256: 602ee2b9806d5d9ae40a9b068e55ba084e6becea51fdbd956d1f0229d553bf44
     build-commands:
       - install -Dm644 LICENSE -t ${FLATPAK_DEST}/share/uhd/images
-      - for f in usrp_b2*; do
-          install -m644 $f -t ${FLATPAK_DEST}/share/uhd/images;
-        done
+      - for f in usrp_b2*; do install -m644 $f -t ${FLATPAK_DEST}/share/uhd/images; done
 
   - name: libmirisdr
     buildsystem: cmake-ninja
@@ -500,8 +498,8 @@ modules:
       - -Wno-dev
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.23.0.tar.gz
-        sha256: 39fcf93c52a9e1cf8b313302ef0531ebdb0ccab2e029e3559ca9632e1aa68d25
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.23.1.tar.gz
+        sha256: b5ff2d97ddb00a53359873903f09a88a590444ba2c766362a16cb97144cbd45f
         x-checker-data:
           type: anitya
           project-id: 14479
