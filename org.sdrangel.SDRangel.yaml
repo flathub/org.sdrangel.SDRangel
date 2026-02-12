@@ -1,9 +1,9 @@
 id: org.sdrangel.SDRangel
 runtime: org.kde.Platform
-runtime-version: '6.9'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
 base: io.qt.qtwebengine.BaseApp
-base-version: '6.9'
+base-version: '6.10'
 command: sdrangel
 rename-desktop-file: sdrangel.desktop
 rename-icon: sdrangel_icon
@@ -18,26 +18,9 @@ finish-args:
   - --system-talk-name=org.freedesktop.GeoClue2
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
-  - mkdir -p ${FLATPAK_DEST}/lib/ffmpeg
-add-extensions:
-  org.freedesktop.Platform.ffmpeg-full:
-    directory: lib/ffmpeg
-    add-ld-path: .
-    version: '24.08'
-    autodownload: true
-    autodelete: false
 
 modules:
   - shared-modules/linux-audio/fftw3f.json
-  - shared-modules/libusb/libusb.json
-
-  - name: libxml2
-    config-opts:
-      - --without-python
-    sources:
-      - type: archive
-        url: https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz
-        sha256: c008bac08fd5c7b4a87f7b8a71f283fa581d80d80ff8d2efd3b26224c39bc54c
 
   - name: boost
     buildsystem: simple
@@ -252,6 +235,7 @@ modules:
       cxxflags: -Wno-error
       cxxflags-override: true
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -Wno-dev
     sources:
       - type: git
@@ -268,6 +252,8 @@ modules:
 
   - name: aptdec
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://github.com/srcejon/aptdec.git
@@ -276,6 +262,8 @@ modules:
 
   - name: ggmorse
     buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://github.com/f4exb/ggmorse.git
@@ -293,7 +281,10 @@ modules:
 
   - name: airspy
     buildsystem: cmake-ninja
+    build-options:
+      cflags: -std=gnu17
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -Wno-dev
     sources:
       - type: archive
@@ -302,7 +293,10 @@ modules:
 
   - name: airspyhf
     buildsystem: cmake-ninja
+    build-options:
+      cflags: -std=gnu17
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -DINSTALL_UDEV_RULES=OFF
       - -Wno-dev
     sources:
@@ -323,6 +317,8 @@ modules:
     buildsystem: cmake-ninja
     build-options:
       cflags: -Wno-calloc-transposed-args
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: git
         url: https://github.com/Nuand/bladeRF.git
@@ -343,6 +339,7 @@ modules:
   - name: plutosdr
     buildsystem: cmake-ninja
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -DINSTALL_UDEV_RULE=OFF
       - -DHAVE_DNS_SD=OFF
       - -Wno-dev
@@ -364,7 +361,14 @@ modules:
 
   - name: limesdr
     buildsystem: cmake-ninja
+    build-options:
+      arch:
+        x86_64:
+          config-opts:
+            - -DARCH_OPT=nehalem
+      cflags: -std=gnu17
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -DENABLE_QUICKTEST=OFF
       - -DENABLE_GUI=OFF
       - -DENABLE_SOAPY_LMS7=OFF
@@ -380,27 +384,31 @@ modules:
   - name: perseus
     buildsystem: cmake-ninja
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -Wno-dev
     sources:
       - type: git
         url: https://github.com/f4exb/libperseus-sdr.git
         commit: 30de6c708fa6afe2040a80df74afb39dcdc6e74a
+      - type: patch
+        path: patches/perseus-newer-cmake-fix.patch
 
-  - name: xtrx
-    buildsystem: cmake-ninja
-    subdir: sources
-    config-opts:
-      - -DENABLE_SOAPY=NO
-      - -Wno-dev
-    sources:
-      - type: git
-        url: https://github.com/xtrx-sdr/images.git
-        commit: e7c68fa621004ee0d6a65171c786fd9d5a1f2ce6
+#  - name: xtrx
+#    buildsystem: cmake-ninja
+#    subdir: sources
+#    config-opts:
+#      - -DENABLE_SOAPY=NO
+#      - -Wno-dev
+#    sources:
+#      - type: git
+#        url: https://github.com/xtrx-sdr/images.git
+#        commit: e7c68fa621004ee0d6a65171c786fd9d5a1f2ce6
 
   - name: uhd
     buildsystem: cmake-ninja
     subdir: host
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -DENABLE_PYTHON_API=OFF
       - -DINSTALL_UDEV_RULES=OFF
       - -Wno-dev
@@ -411,6 +419,7 @@ modules:
         sha256: a2159491949477dca67f5a9b05f5a80d8c2b32e91b95dd7fac8ddd3893e36d09
       - type: patch
         paths:
+          - patches/uhd-add-missing-cstdint-includes.patch
           - patches/uhd-disable-ascii-art-dft.patch
           - patches/uhd-disable-latency-utils.patch
 
@@ -427,6 +436,7 @@ modules:
   - name: libmirisdr
     buildsystem: cmake-ninja
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -Wno-dev
     sources:
       - type: archive
@@ -436,6 +446,7 @@ modules:
   - name: soapy
     buildsystem: cmake-ninja
     config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
       - -Wno-dev
     sources:
       - type: archive
