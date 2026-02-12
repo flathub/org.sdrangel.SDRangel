@@ -22,14 +22,6 @@ cleanup-commands:
 modules:
   - shared-modules/linux-audio/fftw3f.json
 
-  - name: libxml2
-    config-opts:
-      - --without-python
-    sources:
-      - type: archive
-        url: https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.1.tar.xz
-        sha256: c008bac08fd5c7b4a87f7b8a71f283fa581d80d80ff8d2efd3b26224c39bc54c
-
   - name: boost
     buildsystem: simple
     sources:
