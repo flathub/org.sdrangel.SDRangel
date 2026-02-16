@@ -284,8 +284,8 @@ modules:
   - name: hamlib
     sources:
       - type: archive
-        url: https://github.com/Hamlib/Hamlib/releases/download/4.6.5/hamlib-4.6.5.tar.gz
-        sha256: 90d6f1dba59417c00f8f4545131c7efd31930cd0e178598980a8210425e3852e
+        url: https://github.com/Hamlib/Hamlib/releases/download/4.7.0/hamlib-4.7.0.tar.gz
+        sha256: 24542b09cb2432458ba239b2ba8f5b7fb67cde64df6553f150e6eb8475a87a23
         x-checker-data:
           type: anitya
           project-id: 1292
@@ -422,7 +422,8 @@ modules:
         sha256: 602ee2b9806d5d9ae40a9b068e55ba084e6becea51fdbd956d1f0229d553bf44
     build-commands:
       - install -Dm644 LICENSE -t ${FLATPAK_DEST}/share/uhd/images
-      - for f in usrp_b2*; do install -m644 $f -t ${FLATPAK_DEST}/share/uhd/images; done
+      - for f in usrp_b2*; do install -m644 $f -t ${FLATPAK_DEST}/share/uhd/images;
+        done
 
   - name: libmirisdr
     buildsystem: cmake-ninja
@@ -517,8 +518,8 @@ modules:
       - -Wno-dev
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.23.1.tar.gz
-        sha256: b5ff2d97ddb00a53359873903f09a88a590444ba2c766362a16cb97144cbd45f
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.23.2.tar.gz
+        sha256: f73f27bcd6b3b8498fa731d9a2a58230b5c572e40b50bafeeb456cdcb384620f
         x-checker-data:
           type: anitya
           project-id: 14479
