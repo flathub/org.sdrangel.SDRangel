@@ -518,8 +518,8 @@ modules:
       - -Wno-dev
     sources:
       - type: archive
-        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.23.1.tar.gz
-        sha256: b5ff2d97ddb00a53359873903f09a88a590444ba2c766362a16cb97144cbd45f
+        url: https://github.com/f4exb/sdrangel/archive/refs/tags/v7.24.0.tar.gz
+        sha256: edbd8bd1cb7b24d3457a002fe202d70f89d2ed112e5277789817f693bb49cf22
         x-checker-data:
           type: anitya
           project-id: 14479
